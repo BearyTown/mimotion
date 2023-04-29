@@ -180,9 +180,9 @@ def login(user, password):
 def main(_user, _passwd, min_1, max_1):
     user = str(_user)
     password = str(_passwd)
-    step = str(98800)
-#     print("已设置为随机步数(" + str(min_1) + "~" + str(max_1) + ")")
-    print("已设置为最大步数(" + str(98800) + ")")
+    step = str(str(random.randint(70000, 98800)))
+    print("已设置为随机步数(" + str(70000) + "~" + str(98800) + ")")
+#     print("已设置为最大步数(" + str(98800) + ")")
     if user == '' or password == '':
         print("用户名或密码填写有误！")
         return
